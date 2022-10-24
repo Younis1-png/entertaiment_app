@@ -1,0 +1,72 @@
+$backgroundColor: #10141f;
+
+.app {
+  background-color: $backgroundColor;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  //   overflow: hidden;
+
+  //  Navbar
+  .navbar {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: bisque;
+    max-width: 60px;
+    height: 90vh;
+    border-radius: 4px;
+    padding: 10px;
+
+    padding-top: 20px;
+    background-color: #161d2f;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      flex: 1;
+      img:hover {
+        cursor: pointer;
+      }
+    }
+    .nav__container {
+      display: flex;
+      flex-direction: column;
+      flex: 10;
+
+      img {
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    }
+    .user {
+      img {
+        width: 50px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // Search component
+  .search {
+    position: absolute;
+    top: 35px;
+    left: 120px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+
+    input {
+      padding: 15px;
+      font-size: 12px;
+      width: inherit;
+      margin-left: 10px;
+      color: #fff;
+      background-color: $backgroundColor;
+      outline: none;
+      border: none;
+    }
+  }
+}
